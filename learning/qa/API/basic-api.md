@@ -1,9 +1,8 @@
 **API**
-- consider software due it active in server
-- it received data, it process data, it response based on request
-- the way to interact with it is by using same protocol that API have been set
-- postman, one of tools that can send the same protocol (based on your configuration) to the API hence can interact with it
-- can be interact with script as long as the protocol used are the same
+- a set of rules or protocols that enables software applications to communicate with each other to exchange data, features and functionality.
+- API communication in terms of a request and response between a client and server.
+- application submitting the request is the client, and the server provides the response.
+- API is the bridge establishing the connection between client and the server.
 
 > have different type of method as shown below
 >> GET → Retrieve data
@@ -13,27 +12,19 @@
 >> DELETE → Remove data
 
 
+**COMPONENTS OF API**
+- Endpoints  : URLs that provide access to specific resources  or functionalities. 
+- Methods/HTTP Verbs  : Actions that can be performed  (e.g., GET, POST, PUT, DELETE). 
+- Requests  : Data sent by the client to the server. 
+- Responses  : Data sent back by the server to the client. 
+- Headers  : Metadata about the request or response (e.g.,  authentication tokens, content type). 
+End to End API Testing, Curated by Lamhot Siagian 
+- Payload/Body  : Data being sent with the request (typically in JSON or XML format).
+
+
 **PROTOCOL**
 - HTTP - hypertext transfer protocol
 - HTTPS - hypertext transfer protocol secured (often used)
-
-**HTTPS REQUEST SHOULD CONTAINS**
-- URL (address)
-- endpoint (usually what end-point you want to access or go to ex:"https://simple-books-api.glitch.me/status")
-- from "https" until ".me" is the address and "/status" is the endpoint
-- so from above we want to access status of the address
-- endpoint can be varied depends on API
-
-
-**POSTMAN**
-- use can use any protocal (need to configure)
-- manually check endpoint or sending request (GET, POST, PUT, PATCH, DELETE)
-
-> collection - a list of multiple request connecting to the same API
->> avoid configuration in our request ex: url (address), therefore make the address as a variable and save it into the correct collection
->> variables - initial values is this will be available to others if you share the collection
->> variables - current value is this is private to you and this is the value that Postman uses
-> query parameter - usually add parameters for requesting specific data/response based on parameter have been set
 
 
 **HTTPS RESPONSE CODE**  
@@ -58,5 +49,16 @@
 >> 502 Bad Gateway - The server received an invalid response from an upstream server.  
 >> 503 Service Unavailable - The server is currently unable to handle the request.
 
+
+**POSTMAN**
+- tools for testing API
+- can use any protocal (need to configure)
+- manually check endpoint or sending request (GET, POST, PUT, PATCH, DELETE)
+
+> collection - a list of multiple request connecting to the same API
+>> avoid configuration in our request ex: url (address), therefore make the address as a variable and save it into the correct collection
+>> variables - initial values is this will be available to others if you share the collection
+>> variables - current value is this is private to you and this is the value that Postman uses
+> query parameter - usually add parameters for requesting specific data/response based on parameter have been set
 
 Links: https://www.youtube.com/watch?v=VywxIQ2ZXw4
